@@ -20,17 +20,18 @@ header {
 }
 
 .logotype {
-     display: flex;
-     justify-content: end;
+    display: flex;
+    justify-content: flex-start;
 }
 
 
 .banner {
-    background-image: url('../assets/banners/image.png');
+    background-image: url('../assets/banners/banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 64vh;
+    max-height: 65vh;
 }
 
 .subtitles {
@@ -60,11 +61,6 @@ header {
     width: 100%;
     scrollbar-width: thin;          /* "auto" or "thin" */
     scrollbar-color: #002366 #f8b1d1;   /* scroll thumb and track */
-}
-
-.container-products::-webkit-scrollbar{
-    
-    
 }
 
 .product {
