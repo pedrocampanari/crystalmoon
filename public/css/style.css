@@ -5,6 +5,7 @@ header {
     background-color: #ffffffe8;
     padding: 1rem 0 1rem 0;
     position: fixed;
+    z-index: 900;
     width: 100%;
     height: 5.7rem;
 }
@@ -63,11 +64,33 @@ main {
 
 }
 
-.btn-more:hover {
+.btn-buy {
+    background-color: #fff;
+    color: #1b1b1b;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    border-radius: 0 0 10px 10px;
+    padding: 0.3rem 0.7rem 0.2rem 0.7rem;
+    display: inline;
+    cursor: pointer;
+    border: 1px solid #e7e7e7;
+
+    width: 100%;
+}
+
+.btn-more:hover{
     background-color: #ffffff;
-    color: black;
-    border: 1.4px solid black;
-    transition: 0.6s;
+    border: 1px solid #0e0e0e;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.btn-buy:hover{
+    background-color: #002366;
+    color: #fff;
+    transition: 0.5s;
 }
 
 .container-products {
@@ -85,21 +108,38 @@ main {
 .product {
     min-width: 15rem;
     max-height: 20rem;
-    background-color: aquamarine;
+    border: 0.5px solid #b2b2b2;
+    border-radius: 12px 12px 12px;
 }
 
+.menu-container{
+     display: flex;
+     justify-content: end;
+     align-items: center;
+}
 .menu-burger {
     display: flex;
     align-items: center;
     padding: 1vh;
     justify-content: end;
+    overflow: hidden;
+    width: 2.7rem;
+    cursor: pointer;
 }
 
-.menu-burger>img {
+.menu-burger > img {
     width: 2rem;
 }
 
 
+.image {
+    transition: transform 1s ease-in-out;
+}
+  
+.menu-burger:hover .image {
+    transform: rotate(360deg);
+}
+ 
 
 .sidebar {
     position: fixed;
@@ -112,6 +152,7 @@ main {
     overflow-y: auto;
     background-color: #f8b1d1;
     border-right: 1px solid #141414;
+    font-family: 'Bree Serif', Arial, serif;
 }
 
 .aside-a-style {
@@ -123,6 +164,62 @@ main {
     color: #000000;
     font-weight: bold;
 }
+
+.product:hover {
+    background-color: #f1f1f1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.product-name{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', Arial, serif;
+    margin: 0;
+    text-overflow: clip;
+    padding: 0;
+}
+
+.price {
+    font-family: 'Bree Serif', Arial, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.link_product{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+
+.photo-product > img {
+    object-fit: cover ;
+    aspect-ratio: 1/1;
+    height: 170px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #f8b1d1;

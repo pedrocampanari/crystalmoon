@@ -7,23 +7,28 @@ menuBurger.addEventListener('click', () => {
             <div class="row">
                 <div class="col-md-2 sidebar">
                     <ul class="nav flex-column">
+                        <li onclick="closeMenu()" class="nav-item">
+                            <a class="nav-link active aside-a-style" href="#top">>FECHAR MENU<</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active aside-a-style" href="#top">Home</a>
+                            <a class="nav-link aside-a-style" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aside-a-style" href="budgets.html">Sobre nós</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link aside-a-style" href="html/sobre.html">Sobre</a>
+                            <a class="nav-link aside-a-style" href="html/sobre.html">Mais vendidos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link aside-a-style" href="html/project.html">Projetos ECO</a>
+                            <a class="nav-link aside-a-style" href="html/project.html">Colares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link aside-a-style" href="budgets.html">Orçamentos</a>
+                            <a class="nav-link aside-a-style" href="budgets.html">Brincos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link aside-a-style" href="html/contact.html">Anéis</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link aside-a-style" href="html/contact.html">Contato</a>
-                        </li>
+                        
                     </ul>
                 </div>      
             </div>
