@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&display=swap');
+
 header {
     border-top: 8px solid #b2b2b2;
     padding: 1rem 0 1rem 0;
@@ -33,4 +35,40 @@ header {
 
 .subtitles {
     font-size: 2.2rem;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-more {
+    background-color: #002366;
+    color: #fff;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    border-radius: 15px 15px 15px;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem; 
+    display: inline;
+}
+
+.container-products {
+    display: flex;
+    column-gap: 10px;
+    overflow-x: auto;
+    height: 20rem;
+    width: 100%;
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #002366 #f8b1d1;   /* scroll thumb and track */
+}
+
+.container-products::-webkit-scrollbar{
+    
+    
+}
+
+.product {
+    min-width: 15rem;
+    max-height: 20rem;
+    background-color: aquamarine;
 }
