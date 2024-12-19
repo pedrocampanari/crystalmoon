@@ -19,8 +19,8 @@ mongoose.connect(MONGODB_CONNECT_URI)
   .then(() => {
     console.log('Connected to MongoDB');
 
-    app.listen(process.env.PORT || 443, () => {
-      console.log('Server is running on port:', process.env.PORT || 443);
+    app.listen(443, () => {
+      console.log('Server is running on port:', 443);
     });
   })
   .catch((err) => {
